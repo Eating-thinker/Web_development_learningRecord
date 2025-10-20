@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>測驗</title>
+    <style>
+      .input-name,
+      .input-price {
+        width: 100px;
+      }
+      .product-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 112px 112px 50px;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="input-name" placeholder="輸入商品名稱">
+    <input class="input-price" placeholder="輸入商品價格">
+    <button onclick="addProduct();">新增</button>
+
+
+    <div class="product-grid"></div>
+
+
+    <script>
+      let products = [];
+
+      function renderProducts(){
+        const grid = document.querySelector(".product-grid");
+        grid.innerHTML = ""; // 清空原有內容
+
+        products.forEach(function(element,index){
+            const nameDiv = document.createElement("div")
+            nameDiv.textContent = element.productName 
+
+            const priceDiv = document.createElement("div")
+            priceDiv.textContent = element.productPrice
+
+            const removeButton = document.createElement("button")
+            removeButton.textContent = '刪除'
+
+            //onclick的寫法
+          //   removeButton.onclick = function () {
+          //   removeProduct(index)
+          // };
+
+          //事件監聽寫法
+            removeButton.addEventListener('click',function(){
+              removeProduct(index)
+            })
+
+            grid.appendChild(nameDiv)
+            grid.appendChild(priceDiv)
+            grid.appendChild(removeButton)
+        }
+        )
+      }
+
+      function addProduct(){
+        products.push({productName : document.querySelector('.input-name').value, productPrice : document.querySelector('.input-price').value})
+        document.querySelector('.input-name').value = ''
+        document.querySelector('.input-price').value = ''
+        renderProducts()
+      }
+
+      function removeProduct(i){
+        products.splice(i,1)
+        renderProducts()
+      }
+    </script>
+  </body>
+</html>
+
+
+

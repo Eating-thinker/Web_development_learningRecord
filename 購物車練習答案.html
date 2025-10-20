@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>測驗</title>
+    <style>
+      .input-name,
+      .input-price {
+        width: 100px;
+      }
+      .product-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 112px 112px 50px;
+        row-gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="input-name" placeholder="輸入商品名稱">
+    <input class="input-price" placeholder="輸入商品價格">
+    <button onclick="addProduct();">新增</button>
+
+
+    <div class="product-grid"></div>
+
+
+    <script>
+      let products = [];
+
+
+      function renderProducts() {
+        const grid = document.querySelector(".product-grid");
+        grid.innerHTML = ""; // 清空原有內容
+
+
+        products.forEach((product, index) => {
+          const nameDiv = document.createElement("div");
+          nameDiv.textContent = product.name;
+
+          const priceDiv = document.createElement("div");
+          priceDiv.textContent = product.price;
+
+          const deleteBtn = document.createElement("button");
+          deleteBtn.textContent = "刪除";
+          deleteBtn.onclick = function () {
+            removeProduct(index);
+          };
+
+          grid.appendChild(nameDiv);
+          grid.appendChild(priceDiv);
+          grid.appendChild(deleteBtn);
+        });
+      }
+
+
+      function addProduct() {
+        const inputName = document.querySelector(".input-name");
+        const inputPrice = document.querySelector(".input-price");
+
+
+        if (inputName.value.trim() === "" || inputPrice.value.trim() === "") {
+          alert("請輸入完整的商品資訊");
+          return;
+        }
+
+
+        products.push({
+          name: inputName.value,
+          price: inputPrice.value
+        });
+
+
+        inputName.value = "";
+        inputPrice.value = "";
+
+
+        renderProducts();
+      }
+
+
+      function removeProduct(index) {
+        products.splice(index, 1);
+        renderProducts();
+      }
+    </script>
+  </body>
+</html>
+
+
+
