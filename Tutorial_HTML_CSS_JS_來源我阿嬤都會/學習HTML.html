@@ -1,0 +1,125 @@
+<!--html:骨架 css:外觀 javascript:互動功能
+    html副檔名需為html
+    通常主頁名稱是index.html
+-->
+
+<!--!doctype 為html，瀏覽器才知道這是HTML檔-->
+<!doctype html>
+<html>
+    <head>
+        <!--meta標籤-->
+        <!--charset此屬性用來選擇編碼方式，utf-8可用來解讀中文 -->
+        <meta charset="utf-8"></meta>
+
+        <!--網站顯示時下方的描述-->
+        <meta name="description" content="Eating的網站"/>
+        <!--網站的作者-->
+        <meta name="author" content="Eating"/>
+        <!--搜尋關鍵字-->
+        <meta name="keywords" content="Eating的網站"/>
+        <!--視口會根據瀏覽裝置調整-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+
+        <title> hello title </title>
+    </head>
+    <body>
+        hello html
+        <b>粗體字</b>
+        <i>斜體字</i>
+        <!--br換行-->
+        <br/>
+        <!--hr水平線換行-->
+        <hr/>
+        <h1>標題大小h1最大 h6最小</h1>
+        <p>內容</p>
+        
+        
+        <!--連接網址-->
+        <h2>連接網址</h2>
+        <a href="https://google.com">google網站</a>
+        <a href="page_1.html">page_1</a>
+        <a href="test_dir/page_2.html">page_2</a>
+        <a href="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/123-1603771593.jpg?crop=0.490xw:0.980xh;0.510xw,0&resize=640:*">火鍋圖片</a>
+        <a href="1.png">1.png</a>
+        
+        <!--圖片-->
+        <h2>圖片</h2>
+        <br/>
+        <img src="1.png"/>
+        <br/>
+        <img src="1.png" width="50" height="50"/>
+        <img src="1.png" width="30"/>
+        <img src="1.png" height="40"/>
+        <br/>
+        <img src="data:image/png;base64,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"/>
+    
+        <!--影片、嵌入youtuber影片-->
+        <h2>影片</h2>
+        <!--controls使影片有操作按鈕可使用，否則會無法播放-->
+        <video src="perfect.mp4" controls width="400" height="300">無法載入時顯示</video>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <!--列表-->
+        <h2>列表</h2>
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+        <ol type="a">
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+
+        <!--表格-->
+        <h2>表格</h2>
+        <table width="400">
+            <tr>
+                <td>ID</td>
+                <td>name</td>
+                <td>age</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Eating</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Eric</td>
+                <td>22</td>
+            </tr>
+        </table>
+        
+        <!--容器，方便CSS使用，
+            div為一整行，css中的display為block
+            span根據文字寬度，css中的display為inline
+        -->
+        <h2>容器</h2>
+        <div>div</div>
+        <div>div</div>
+        <hr/>
+        <span>span</span> 
+        <span>span</span>
+
+        <!--input-->
+        <h2>input</h2>
+        <input type="text" placeholder="請輸入帳號"/>
+        <br/>
+        <br/>
+        <input type="password" placeholder="請輸入密碼"/>
+        <br/>
+        <br/>
+        <input type="date"/>
+        <input type="range">
+        <input type="'file"/>
+        <input type="checkbox"/>
+        <br/>
+        <textarea>test</textarea>
+
+        <!--慢慢學習到的-->
+        <!--有先標籤也可設定width、height，但是是屬於CSS 有些標籤則是可以視為屬性直接調整，EX:img、video-->
+        <div style="display:flex; border:1px solid red; height:500px; width:800px;"></div>
+    </body>
+</html> 

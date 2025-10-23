@@ -1,0 +1,59 @@
+
+h4{
+    color:brown;
+    background-color: rgb(51, 51, 38);
+}
+h5{
+    color:pink;
+    font-size:20px;
+    height: 200px;
+    background-color: gray;
+}
+
+.class_1{
+    color:rgb(73, 30, 172);
+    font-size:50px;
+    background-color: gray;
+}
+
+.class_2{
+    color:rgb(140, 7, 109);
+    font-size:40px;
+    background-color: rgb(194, 178, 178);
+}
+
+#id_1{
+    color:rgb(239, 227, 236);
+    font-size:40px;
+    background-color: rgb(15, 14, 14);
+}
+
+ul li{
+    color:red;
+}
+
+.flex{
+    border:1px solid red;
+    height: 100px;
+    width: 150px;
+}
+
+/*border-style: none 讓周圍沒有小邊框
+  cursor: pointer 游標指到時變成pointer
+*/
+button{
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    border-radius: 5px;
+    border-style: none;
+    cursor:pointer;
+}
+/*游標指到時產生變化*/
+button:hover{
+    background-color: grey;
+}
+/*游標按住時產生變化*/
+button:active{
+    background-color: red;
+}

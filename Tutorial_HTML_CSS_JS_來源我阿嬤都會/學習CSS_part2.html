@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Eating在學CSS-part2</title>
+        <!--style標籤-->
+        <!--
+        <style>
+            h4{
+                color:brown;
+                background-color: yellow;
+            }
+            h5{
+                color:pink;
+                font-size:20px;
+                height: 200px;
+                background-color: gray;
+            }
+        </style>
+        -->
+        <link rel="stylesheet" href="學習style.css"/>
+    </head>
+    <body>
+        <!--opacity，數值為0~1-->
+        <p style="position: relative; top:50px ">opacity</p>
+        <div style="opacity: 0.1; background-color: black; width: 50px; height: 50px ;"></div>
+        <!--border-radius-->
+        <h2>border-radius</h2>
+        <div style="border-radius: 10px; background-color: black; width: 50px; height: 50px ;"></div>
+        <div style="border-radius: 40px; background-color: blue; width: 50px; height: 50px ;"></div>
+        <div style="border-radius: 40px 30px 20px 10px; background-color: red; width: 100px; height: 100px ;"></div>
+        <!--style標籤-->
+        <!--用link標籤引入CSS-->
+        <h4>brown</h4>
+        <h5>pink </h5>
+        <!--class-->
+        <h1>class</h1>
+        <p class="class_1">123</p>
+        <p class="class_2">123</p>
+        <p id="id_1">123</p>
+        <!--包在ul裡的li標籤，配合CSS選擇器看-->
+        <ul>
+            <li>test</li>
+        </ul>
+        <!--flex，排版神器
+            被包在裡面的東西會變一排
+            若未設定flex比例，這是依據原大小顯示
+            flex-wrap:wrap 此屬性設定可在寬度不夠時自動換行
+            flex-direction:column 此屬性設定可改變主軸顯示方式，此屬性預設為row，以也可輸入column-reverse，
+            justify-content:center 此屬性將內容物集中主軸的某區域，也可是flex-end、flex-start、space-around、space-between、space-evenly
+            align-content:center 此屬性將內容物集中到次軸的某區域-->
+        <div style="display:flex;flex-wrap:wrap;flex-direction:column; justify-content:center;align-content: center; border:1px solid red; height: 500px;width: 800px;">
+            <div class="flex">區塊1</div>
+            <div class="flex">區塊1</div>
+            <div class="flex">區塊3</div>
+        </div>
+        <hr/>
+            <!--若設定flex比例，則依據設地大小顯示
+                order屬性可改變順序
+                若無設定flex-wrap:wrap，寬度不夠時會自動擠壓-->
+        <div style="display:flex; border:1px solid red;">
+            <div class="flex" style="flex:2;order:2;">區塊1</div>
+            <div class="flex" style="flex:5;order:3;">區塊2</div>
+            <div class="flex" style="flex:3;order:1;">區塊3</div>
+        </div>
+
+        <!--text的位置方式-->
+        <h1 style="text-align: center;">部落格</h1>
+
+        <!--word-break: break-all，文字太多自動換行-->
+        <p style="border:1px solid black ; left: 10px ; width: 170px ;word-break: break-all;">寫程式好好玩123456789123456789123456798</p>
+
+        <!--配合CSS看
+        學習游標指到標籤後產生變化
+        -->
+        <button>按鈕</button>
+    </body>
+</html>

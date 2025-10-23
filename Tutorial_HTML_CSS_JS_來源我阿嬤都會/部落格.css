@@ -1,0 +1,18 @@
+.article{
+    margin: 5px; 
+    border:1px solid black ;
+    width: 170px;
+}
+
+.title{
+    position: relative; 
+    word-break: break-all; 
+    margin: 2.5px;
+
+}
+
+.content{
+    position: relative ; 
+    word-break: break-all; 
+    margin: 2.5px;
+}
