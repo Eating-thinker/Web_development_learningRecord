@@ -1,0 +1,59 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color : #3b36cc;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.ToDoWrapper{
+    width : 450px;
+    padding : 30px;
+    background-color: #1a1a40;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.CreateForm{
+    height: 40px;
+    width: 100%;
+    margin: 25px 0px;
+    border: 1px solid #3b36cc;
+    display: flex;
+    
+}
+
+.CreateForm input{
+    outline: none;
+    border: none;
+    background: none;
+    color : white;
+    height: 100%;
+    width: 100%;
+    padding-left: 10px ;
+}
+
+.CreateForm button{
+    border: none;
+    background-color: #3636cc;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+}
+.todo{
+    background-color: #3636cc;
+    height: 40px;
+    padding:0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
