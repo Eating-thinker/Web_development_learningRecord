@@ -1,5 +1,5 @@
 ## 網頁前後端開發學習紀錄
 目前只有前端 <br>
-"Tutorial_HTML_CSS_JS_來源我阿嬤都會"此資料夾存放純HTML、CSS、JS學習筆記 <br>
-"購物車開發_純HTML_CSS_JS"此資料夾存放純HTML、CSS、JS開發購物車，沒有使用react <br>
-"my-react-todo"此資料夾是react開發的TodoList
+- `Tutorial_HTML_CSS_JS_來源我阿嬤都會`：純 HTML / CSS / JS 筆記
+- `購物車開發_純HTML_CSS_JS`：原生 JS 購物車
+- `my-react-todo`：React TodoList
